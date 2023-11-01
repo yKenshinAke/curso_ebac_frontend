@@ -1,0 +1,156 @@
+* 
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header 
+{
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: white;
+    /*display: none*/ /* Serve para sumir com alguma coisa do site */
+}
+
+header .container 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li
+{
+    display: inline; /* faz com que os botoes fiquem um do lado do outro */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a 
+{
+    color: white;
+    text-decoration: none;
+}
+
+.container
+{
+    width: 1366px;
+    margin: 25px;
+}
+
+.articles 
+{display: flex;
+    flex-wrap: wrap; /* serve para fazer um quebra de linha entre as noticias */
+    justify-content: space-around; /* ajusta o espaçamento entre as imagens de forma igualitaria */
+}
+
+.articles article img
+{
+    height: 250px; /* muda o tamanho da imagem */
+    width: 100%
+}
+
+.articles article
+{
+    width: 30%; /* % q a imagem vai aparecer na tela */
+}
+
+section 
+{
+    padding: 16px 0; /* margem do texto de baixo pro titulo de cima "Meu portal de noticias" */
+}
+
+section h2,
+.articles article /* aplica uma margem ao texto ou imagem de cima */
+{
+    margin-bottom: 16px; /* margem do texto de baixo pro titulo de cima "Esports e economia" */
+}
+
+.articles article h3
+{
+    margin-top: 5px; /* margem do texto "noite do superbowl" para a imagem */
+    margin-bottom: 5px; /* margem do texto de baixo do titulo do "superbowl" */
+}
+
+.articles article a /* Serve para mudar a cor de um botão ou as propriedades dele */
+{
+    background-color:blue;
+    color: #fff;
+    padding: 5px; /* muda o tamanho da margem do "ler mais" com o texto de cima  */
+    display: inline-block; /* Tira a sobreposição da cor do"Ler mais" com o texto de cima */
+    text-decoration: none; /* usar junto com o comando de baixo para o efeito aparecer */
+    font-weight: bold; /* Serve para aumentar a espesura do botão ou texto */
+    margin-top: 8px;
+}
+
+.articles article a:hover 
+{
+    text-decoration: underline; /* Adiciona a linha do "Ler Mais" quando voce passa o mouse em cima dele */
+}
+
+.articles article p,
+.articles article a /* Muda o tipo de texto do "ler mais" que são botoes */ 
+{
+    font-family: Arial, Helvetica, sans-serif; /* muda a font de textos da pagina */
+}
+
+.articles article h3 
+{
+    font-size: 24px; /* muda o tamanho da fonte */
+}
+
+section h2
+{
+    font-size: 32px;
+    text-align: center;
+}
+
+#sports
+{
+    background-color: rgba(0, 255, 0, 10);
+}
+
+#sports .articles
+{
+    justify-content: space-between;
+}
+
+#sports .articles article a 
+{
+    background-color: red;
+}
+
+#economy 
+{
+    background-color: #fffa65;
+}
+
+#economy .articles article a
+{
+    background-color: #ff9f1a;
+}
+
+#technology
+{
+    background-color: rgb(211, 56, 56);
+}
+
+#Entreteniment
+{
+    background-color: rgb(117, 63, 219);
+}
+
+#Entreteniment .articles article a
+{
+    background-color: red;
+}
+
+#Entreteniment .articles 
+{
+    justify-content: space-around;
+}
+
+
+

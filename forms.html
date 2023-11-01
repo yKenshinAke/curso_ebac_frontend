@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form>
+        <label for="nome">Seu nome</label>
+        <br />
+        <input id="nome" type="text" placeholder="Seu nome" />
+        <br />
+        <label for="email">Seu e-mail</label>
+        <br />
+        <input id="email" type="email" placeholder="Seu e-mail" />
+        <br />
+        <input type="tel" placeholder="Seu telefone" /> <br />
+        <input type="number" max="10" min="2" step="2" /> <br />
+        <input type="file" /> <br />
+        <input type="color" /> <br />
+        <input type="checkbox" id="checkbox-termos" /> <label for="checkbox-termos">Aceito os termos</label>
+        <p>
+            Qual sua cor favorita
+        </p>
+        <input type="radio" name="cor-favorita" id="cor-Vermelha"/> <label for="cor-vermelha"> Vermelho</label>
+        <input type="radio" name="cor-favorita" id="cor-Verde" /> <label for="cor-Verde"> Verde</label>
+        <input type="radio" name="cor-favorita" id="cor-Azul"/> <label for="cor-Azul"> Azul</label> <br />
+        <label>Qual seu filme favorito</label>
+        <select multiple>
+            <option>Filme A</option>
+            <option>Filme B</option>
+            <option>Filme C</option>
+        </select>
+        <br />
+        <br />
+        <Label>Qual seu carro favorito</Label>
+        <select>
+            <option>Carro Gtr 34</option>
+            <option>Carro Supra mk4</option>
+            <option>Carro RX-7</option>
+        </select>
+        <br />
+        <textarea></textarea> <br />
+        <button type="submit">
+            Enviar
+        </button>
+        <button type="reset">
+            limpar
+        </button>
+    </form>
+</body>
+</html>
